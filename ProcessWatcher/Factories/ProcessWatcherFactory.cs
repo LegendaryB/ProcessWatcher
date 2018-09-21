@@ -2,7 +2,7 @@
 using ProcessWatcher.Infrastructure.Interfaces;
 using System.Security.Principal;
 
-namespace ProcessWatcher
+namespace ProcessWatcher.Factories
 {
     public static class ProcessWatcherFactory
     {

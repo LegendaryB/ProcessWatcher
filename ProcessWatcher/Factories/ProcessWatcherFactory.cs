@@ -1,4 +1,5 @@
-﻿using ProcessWatcher.Infrastructure.Interfaces;
+﻿using ProcessWatcher.Implementations;
+using ProcessWatcher.Infrastructure.Interfaces;
 using System.Security.Principal;
 
 namespace ProcessWatcher

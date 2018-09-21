@@ -1,4 +1,5 @@
 ﻿using ProcessWatcher.Factories;
+using System;
 
 namespace ProcessWatcher.Sample
 {
@@ -9,7 +10,12 @@ namespace ProcessWatcher.Sample
             var watcher = ProcessWatcherFactory
                 .GetImplementation();
 
-            watcher.WatchAsync();
+            watcher.RegisterCallbackDelegate((wrapper) =>
+            {
+                Console.WriteLine();
+            });
+
+            watcher.WatchAsync().Wait();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ProcessWatcher.Implementations
     {
         private const string WMI_SCOPE = @"\\.\root\CIMV2";
         private const string WMI_BASE_QUERY = 
-            "SELECT TargetInstance " +
+            "SELECT * " +
             "FROM __InstanceCreationEvent " +
             "WITHIN 10 " +
             "WHERE TargetInstance ISA 'Win32_Process'";
@@ -70,7 +70,7 @@ namespace ProcessWatcher.Implementations
                 return null;
 
             string processIdString = processIdProperty
-                .Value
+                .Value?
                 .ToString();
 
             if (!int.TryParse(processIdString, out int processId))

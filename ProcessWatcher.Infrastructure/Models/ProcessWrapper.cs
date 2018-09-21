@@ -6,6 +6,6 @@ namespace ProcessWatcher.Infrastructure.Models
     public class ProcessWrapper
     {
         public Process Process { get; set; }
-        public IDictionary<string, object> ExtendedProperties { get; set; };
+        public IDictionary<string, object> ExtendedProperties { get; set; }
     }
 }

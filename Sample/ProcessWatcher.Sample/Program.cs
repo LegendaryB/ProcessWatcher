@@ -13,6 +13,8 @@ namespace ProcessWatcher.Sample
         {
             var watcher = ProcessWatcherFactory
                 .GetImplementation();
+
+            watcher.WatchAsync();
         }
     }
 }

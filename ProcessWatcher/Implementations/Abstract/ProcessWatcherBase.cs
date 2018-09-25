@@ -1,4 +1,4 @@
-﻿using ProcessWatcher.Helper;
+﻿using ProcessWatcher.Utilities;
 using ProcessWatcher.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
@@ -19,6 +19,13 @@ namespace ProcessWatcher.Implementations.Abstract
 
             ProcessStartedCallbackList.Add(
                 onProcessStartedCallbackDelegate);
+        }
+
+        protected virtual void InvokeCallbackDelegates(
+            ProcessWrapper processWrapper)
+        {
+            foreach (var callback in ProcessStartedCallbackList)
+                callback?.Invoke(processWrapper);
         }
     }
 }

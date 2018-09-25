@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProcessWatcher.Helper
+namespace ProcessWatcher.Utilities
 {
     internal static class Argument
     {

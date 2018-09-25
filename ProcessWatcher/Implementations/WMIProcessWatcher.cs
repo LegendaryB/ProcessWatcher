@@ -19,12 +19,15 @@ namespace ProcessWatcher.Implementations
             "WITHIN 10 " +
             "WHERE TargetInstance ISA 'Win32_Process'";
 
-        public Task WatchAsync()
+        public async Task WatchAsync()
         {
-            var eventWatcher = GetWmiEventWatcher();
+            await Task.Run(() =>
+            {
+                var eventWatcher = GetWmiEventWatcher();
 
-            while (true)
-                eventWatcher.WaitForNextEvent();
+                while (true)
+                    eventWatcher.WaitForNextEvent();
+            }).ConfigureAwait(false);
         }
 
         private ManagementEventWatcher GetWmiEventWatcher()
@@ -83,13 +86,6 @@ namespace ProcessWatcher.Implementations
                 Process = process,
                 ExtendedProperties = extendedProperties
             };                        
-        }
-
-        private void InvokeCallbackDelegates(
-            ProcessWrapper processWrapper)
-        {
-            foreach (var callback in ProcessStartedCallbackList)
-                callback?.Invoke(processWrapper);
         }
     }
 }

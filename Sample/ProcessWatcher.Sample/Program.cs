@@ -12,10 +12,12 @@ namespace ProcessWatcher.Sample
 
             watcher.RegisterCallbackDelegate((wrapper) =>
             {
-                Console.WriteLine();
+                Console.WriteLine($"Process launched: {wrapper.Process?.ProcessName}");
             });
 
-            watcher.WatchAsync().Wait();
+            watcher.WatchAsync();
+
+            Console.ReadLine();
         }
     }
 }

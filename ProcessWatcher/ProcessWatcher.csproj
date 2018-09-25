@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helper\Argument.cs" />
+    <Compile Include="Implementations\EqualityComparer\ProcessEqualityComparer.cs" />
+    <Compile Include="Utilities\Argument.cs" />
     <Compile Include="Factories\ProcessWatcherFactory.cs" />
+    <Compile Include="Utilities\PeriodicTask.cs" />
     <Compile Include="Implementations\Abstract\ProcessWatcherBase.cs" />
     <Compile Include="Implementations\PoorManProcessWatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

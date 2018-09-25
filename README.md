@@ -5,8 +5,7 @@
 [![GitHub license](https://img.shields.io/github/license/dbelz/ProcessWatcher.svg)](https://github.com/dbelz/ProcessWatcher/blob/master/LICENSE.md)
 
 This is a simple library to get a handle on new process starts. The implementation is kept very simple.  
-Other ways to get process starts are WMI or a kernel driver.  
-For the driver [PsSetCreateProcessNotifyRoutine](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-pssetcreateprocessnotifyroutine) can be used.
+Other ways to get process starts are WMI or a kernel driver. For the driver [PsSetCreateProcessNotifyRoutine](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-pssetcreateprocessnotifyroutine) can be used.
 
 ### Authors
 

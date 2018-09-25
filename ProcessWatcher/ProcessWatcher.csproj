@@ -41,20 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implementations\EqualityComparer\ProcessEqualityComparer.cs" />
+    <Compile Include="ProcessEqualityComparer.cs" />
     <Compile Include="Utilities\Argument.cs" />
-    <Compile Include="Factories\ProcessWatcherFactory.cs" />
     <Compile Include="Utilities\PeriodicTask.cs" />
-    <Compile Include="Implementations\Abstract\ProcessWatcherBase.cs" />
-    <Compile Include="Implementations\PoorManProcessWatcher.cs" />
+    <Compile Include="Watchdog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Implementations\WMIProcessWatcher.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProcessWatcher.Infrastructure\ProcessWatcher.Infrastructure.csproj">
-      <Project>{21292898-af78-423a-8350-98eb9369d095}</Project>
-      <Name>ProcessWatcher.Infrastructure</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

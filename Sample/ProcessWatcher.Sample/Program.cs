@@ -1,5 +1,4 @@
-﻿using ProcessWatcher.Factories;
-using System;
+﻿using System;
 
 namespace ProcessWatcher.Sample
 {
@@ -7,15 +6,16 @@ namespace ProcessWatcher.Sample
     {
         static void Main(string[] args)
         {
-            var watcher = ProcessWatcherFactory
-                .GetImplementation();
+            var watchdog = new Watchdog();
 
-            watcher.RegisterCallbackDelegate((wrapper) =>
+            watchdog.Attach((p) =>
             {
-                Console.WriteLine($"Process launched: {wrapper.Process?.ProcessName}");
-            });
+                Console.WriteLine(p.ProcessName);
+            },
+            out Guid callbackId);
 
-            watcher.WatchAsync();
+            watchdog.Run();
+
 
             Console.ReadLine();
         }

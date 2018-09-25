@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessWatcher", "ProcessWatcher\ProcessWatcher.csproj", "{B8E276F7-E77B-469A-8578-486ACF27FA62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessWatcher.Infrastructure", "ProcessWatcher.Infrastructure\ProcessWatcher.Infrastructure.csproj", "{21292898-AF78-423A-8350-98EB9369D095}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{C156D997-0702-4A26-8671-7989562295DF}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.md = LICENSE.md
@@ -27,10 +25,6 @@ Global
 		{B8E276F7-E77B-469A-8578-486ACF27FA62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E276F7-E77B-469A-8578-486ACF27FA62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E276F7-E77B-469A-8578-486ACF27FA62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21292898-AF78-423A-8350-98EB9369D095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21292898-AF78-423A-8350-98EB9369D095}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21292898-AF78-423A-8350-98EB9369D095}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21292898-AF78-423A-8350-98EB9369D095}.Release|Any CPU.Build.0 = Release|Any CPU
 		{606F7E41-4E80-415C-9766-DBAB2715D3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{606F7E41-4E80-415C-9766-DBAB2715D3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{606F7E41-4E80-415C-9766-DBAB2715D3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU

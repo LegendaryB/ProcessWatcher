@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace ProcessWatcher.Implementations.EqualityComparer
+namespace ProcessWatcher
 {
     public class ProcessEqualityComparer : 
         IEqualityComparer<Process>

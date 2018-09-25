@@ -49,10 +49,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ProcessWatcher.Infrastructure\ProcessWatcher.Infrastructure.csproj">
-      <Project>{21292898-af78-423a-8350-98eb9369d095}</Project>
-      <Name>ProcessWatcher.Infrastructure</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\ProcessWatcher\ProcessWatcher.csproj">
       <Project>{b8e276f7-e77b-469a-8578-486acf27fa62}</Project>
       <Name>ProcessWatcher</Name>
